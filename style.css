@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+h2{
+    margin: 40px 0 60px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 80px;
+}
+
+#search-img{
+    width:500px;
+    margin: 0.4rem;
+    border-radius: 3px;
+    padding: 0.3rem;
+    box-shadow: 2px 2px 8px rgb(60, 50, 50);
+}
+
+#search-button{
+    background-color: rgb(18, 106, 106);
+    color: aliceblue;
+    margin: 0.4rem;
+    border-radius: 3px;
+    padding: 0.3rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(60, 50, 50);
+}
+
+.search-results{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin: 10px;
+  box-shadow: 4px 6px 8px rgb(16, 14, 14);
+
+}
+
+.search-result img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    transition: opacity 0.32s ease-in-out;
+}
+
+
+.search-result img:hover{
+  opacity: 0.8;
+
+}
+#colur{
+    background-color: rgb(18, 106, 106);
+    color: aliceblue;
+    padding-top: 1px;
+    box-shadow: 4px 4px 4px black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+#colur h2{
+padding-bottom: 25px;
+}
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#show-more{
+      background-color: #076f92;
+    color: aliceblue;
+    margin: 0.4rem;
+    border-radius: 3px;
+    padding: 0.3rem;
+    box-shadow: 2px 2px 8px rgb(60, 50, 50);
+    cursor: pointer;
+   
+    /* display: none; */
+}
+#showmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .search-result{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .search-result{
+        width: 100%;
+    }
+    
+}
